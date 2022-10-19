@@ -56,31 +56,7 @@ footer {
     height: 100%;
 
 }
-.menu{
-    display: inline-block;
-    vertical-align: top;
-    height: 80px;
-    padding: 25px;
-}
 
-.menu ul{
-    margin: 0;
-    padding: 0;
-
-}
-.menu li{
-    display: inline-block;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1.3em;
-    padding: 15px;
-}
-.menu a:hover{
-    background-color: #ec4c4c;
-}
 .menu-pessoa {
     float: right;
     color: #eee;
@@ -92,6 +68,34 @@ footer {
 
 .menu-pessoa:hover {
     background-color: #ec4c4ca1;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+.menu a:hover {
+    background-color: #ec4c4c;
 }
 
 .menu-sair {
@@ -117,16 +121,14 @@ main .titulo {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 50px;
+    margin: 40px;
 }
 
 .itens {
     width: 350px;
     height: 450px;
-    border: solid 2px #ec4c4c;
     border-radius: 10px;
     padding: 10px;
-    background-color: #e0e0d8b9;
     text-align: center;
     margin-top: 10px;
 }
@@ -151,7 +153,20 @@ a.button:hover {
 }
 
 .itens img {
+    border-radius: 12px;
     height: 65%;
+}
+.itens .alemanha{
+    opacity: 50%;
+}
+.itens .argentina{
+    opacity: 50%;
+}
+.itens .brasil{
+    opacity: 100%;
+}
+.itens .belgica{
+    opacity: 50%;
 }
 
 section.container-cards {
@@ -159,49 +174,11 @@ section.container-cards {
     text-align: center;
 }
 
-.container-titulo {
-    font-size: 22px;
-}
-
-.divBusca {
-    display: inline-block;
-    vertical-align: top;
-    background-color: #E9E8E3;
-    border: solid 2px #ec4c4c;
-    border-radius: 10px;
-    height: 40px;
-    margin: 26px 15px;
-}
-
-.txtBusca {
-    float: left;
-    background-color: transparent;
-    padding-left: 5px;
-    font-size: 18px;
-    border: none;
-    height: 37px;
-    width: 191px;
-}
-
-.btnBusca {
-    border: none;
-    float: right;
-    height: 37px;
-    border-radius: 0 7px 7px 0;
-    width: 65px;
-    font-weight: bold;
-    background: #ec4c4c;
-}
-
-.divBusca img {
-    float: left;
-    margin: 5px;
-    width: 25px;
-}
 .menu-progress-bar{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 35px;
 }
 .progress-bar {
     height: 35px;
@@ -214,6 +191,7 @@ section.container-cards {
 
 .progress-bar::before {
     content: "";
+    width: 50%;
     width: calc(var(--progress) * 1%);
     background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
     transition: all 0.2s ease;

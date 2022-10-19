@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,600;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #ec4c4c;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+
+.cabecalho {
+    background-color: #3a3a3a;
+    height: 80px;
+    color: #fff;
+    padding: 15px 30px;
+    border-bottom: solid 5px #ec4c4c;
+    box-sizing: content-box;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo {
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+
+.logo img {
+    height: 100%;
+
+}
+
+.menu-pessoa {
+    float: right;
+    color: #eee;
+    background: #ec4c4c;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+}
+
+.menu-pessoa:hover {
+    background-color: #ec4c4ca1;
+}
+.menu{
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+
+}
+.menu li{
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 15px;
+}
+.menu a:hover{
+    background-color: #ec4c4c;
+}
+.menu-sair {
+    float: right;
+    height: 85px;
+    padding: 25px;
+}
+
+.menu-sair img {
+    height: 100%;
+}
+
+main .titulo {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
+    padding: 15px;
+}
