@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right,#f1f1f1, #9a1032);
+
+}
+
+main {
+    display: flex;
+}
+
+.wallpaper {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('../img/logo-catar.png');
+}
+
+#login {
+
+    display: flex;
+    justify-content: right;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+.card {
+    background-color: rgba(19, 19, 19, 0.3);
+    padding: 40px;
+    border-radius: 2px;
+    width:280px;
+    
+
+}
+
+.card-header {
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 25px;
+
+}
+
+.card-header::after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background-color: #fff;
+    display: block;
+    margin-top: -17px;
+    margin-left: -5px;
+
+}
+
+.card-content label {
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.card-content-area {
+    display: flex;
+    flex-direction: column;
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+    margin-top: 10px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+div.card-footer #submit{
+
+    border: 1px solid black;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 100px;
+    font-weight: bold;
+
+}
+
+div.card-footer #submit:hover{
+    background-color: #00802b ;
+    transition-duration: 0.9s;
+}
+
+.card-footer label{
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: #fff;
+    margin: 10px;
+}
+
+.card-footer a {
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+    color: #fff;
+    margin: 4px;
+
+}
+.card-footer input:hover{
+    background-color: rgba(0, 0, 0, 0.288);
+}
