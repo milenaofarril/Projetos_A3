@@ -1,4 +1,4 @@
-#Projetos A3
+<h1 align="center"> Projetos A3 </h1>
 
 Projetos do 3º semestre do curso de Ciência da Computação, das matérias de "Usabilidade, Desenvolvimento Web, Mobile e Jogos" e "Sistemas Distribuídos e Mobile".
 
