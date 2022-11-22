@@ -16,6 +16,7 @@ public class TabuleiroConsole {
 	private Tabuleiro tabuleiro;
 	private InterfaceEntradaESaida entradaESaida;
 	private DataBase base;
+	private Nivel nivel = new Nivel();
 	
 	public TabuleiroConsole(Tabuleiro tabuleiro) {
 		this.tabuleiro = tabuleiro;
@@ -64,24 +65,21 @@ public class TabuleiroConsole {
 					tabuleiro.alternarMarcacao(xy.next(), xy.next());
 				}
 			}
-
-			Nivel nivel = entradaESaida.leNivel();
-			switch (nivel.getNivel()) {
-				case "1":
-					Pontuacao p = new Pontuacao(5);
-					base.inserePontos(p);
-					break;
-				case "2":
-					Pontuacao p2 = new Pontuacao(10);
-					base.inserePontos(p2);
-					break;
-				case "3":
-					Pontuacao p3 = new Pontuacao(15);
-					base.inserePontos(p3);
-					break;
-			}
 			System.out.println(tabuleiro);
 			System.out.println("Você ganhou!!!");
+
+
+			if(nivel.getNivel().equals("1")){
+				Pontuacao p = new Pontuacao(5);
+				base.inserePontos(p);
+			} else if (nivel.getNivel().equals("2")) {
+				Pontuacao p = new Pontuacao(10);
+				base.inserePontos(p);
+			} else if (nivel.getNivel().equals("3")) {
+				Pontuacao p = new Pontuacao(15);
+				base.inserePontos(p);
+			}
+
 		} catch(ExplosaoException e) {
 			System.out.println(tabuleiro);
 			System.out.println("Você perdeu!");
@@ -89,6 +87,7 @@ public class TabuleiroConsole {
 	}
 	
 	private String capturarValorDigitado(String texto) {
+		Scanner entrada = new Scanner(System.in);
 		System.out.print(texto);
 		String digitado = entrada.nextLine();
 		

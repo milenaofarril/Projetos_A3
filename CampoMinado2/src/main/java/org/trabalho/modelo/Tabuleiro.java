@@ -1,6 +1,6 @@
 package org.trabalho.modelo;
 
-import org.trabalho.controller.ServerInit;
+import org.trabalho.controller.InitGame;
 import org.trabalho.excecao.ExplosaoException;
 
 import java.util.ArrayList;
@@ -13,7 +13,7 @@ public class Tabuleiro {
 	private int colunas;
 	private int minas;
 
-	private ServerInit serverInit;
+	private InitGame initGame;
 	
 	private final List<Campo> campos = new ArrayList<>();
 
@@ -78,8 +78,8 @@ public class Tabuleiro {
 	}
 	
 	public void reiniciar() {
-		serverInit = new ServerInit();
-		serverInit.init();
+		initGame = new InitGame();
+		initGame.init();
 	}
 	
 	public String toString() {

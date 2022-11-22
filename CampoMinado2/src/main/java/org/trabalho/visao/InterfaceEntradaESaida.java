@@ -30,8 +30,7 @@ public class InterfaceEntradaESaida {
         System.out.println("Qual nivel do jogo?");
         String nivelSelecionado = scn.nextLine();
 
-        Nivel nivel = new Nivel(nivelSelecionado);
-        return nivel;
+        return new Nivel(nivelSelecionado);
     }
     
     public String obterResposta(){

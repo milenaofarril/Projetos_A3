@@ -1,10 +1,7 @@
 package org.trabalho.config;
 
-import org.trabalho.models.Nivel;
 import org.trabalho.models.Pontuacao;
 import org.trabalho.models.Users;
-
-import com.mysql.cj.protocol.Resultset;
 
 import java.sql.*;
 import java.util.logging.Level;
@@ -12,13 +9,13 @@ import java.util.logging.Logger;
 
 public class DataBase {
 
-    private String URL_DB = "jdbc:mysql://localhost:3306/CampoMinado";
+    private String URL_DB = "jdbc:mysql://localhost:3306/campoMinado";
     private Connection connect = null;
 
 
     public DataBase() {
         try {
-            connect = DriverManager.getConnection(URL_DB, "milena", "milena");
+            connect = DriverManager.getConnection(URL_DB, "root", "admin");
             System.out.println("Conexão bem sucedida com o banco.");
         } catch (SQLException ex) {
             Logger.getLogger(DataBase.class.getName()).log(Level.SEVERE, null, ex);
@@ -54,6 +51,5 @@ public class DataBase {
             Logger.getLogger(DataBase.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-
 
 }
