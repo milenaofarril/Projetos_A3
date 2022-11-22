@@ -2,7 +2,7 @@
 
 Projetos do 3º semestre do curso de Ciência da Computação, das matérias de "Usabilidade, Desenvolvimento Web, Mobile e Jogos" e "Sistemas Distribuídos e Mobile".
 
-Integrantes: 
+<strong>Integrantes:<strong>
 
 Braiam Santos de Jesus - RA: 125111368287 <br>
 Davi dos Santos Silva - RA: 125111361097 <br>
