@@ -1,6 +1,6 @@
 package org.trabalho.controller;
 
-import org.trabalho.config.ClientServidor;
+import org.trabalho.config.Client;
 import org.trabalho.config.Servidor;
 
 public class InitClient {
@@ -12,7 +12,7 @@ public class InitClient {
         Thread tServidor = new Thread(serv);
         tServidor.start();
 
-        ClientServidor client = new ClientServidor("127.0.0.1", 3000);
+        Client client = new Client("127.0.0.1", 3000);
     }
 
     public static void main(String[] args) {

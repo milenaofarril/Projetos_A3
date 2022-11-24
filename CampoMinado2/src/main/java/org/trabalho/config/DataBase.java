@@ -41,8 +41,10 @@ public class DataBase {
     public void inserePontos(Pontuacao p) {
         try {
             int pontos = p.getPontos();
+            System.out.println(pontos);
 
             String sql = "SELECT nome, SUM (pontuacao) from jogo group by nome";
+
 
             Statement stmt = connect.createStatement();
             ResultSet r = stmt.executeQuery(sql);

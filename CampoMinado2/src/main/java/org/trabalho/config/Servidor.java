@@ -1,8 +1,6 @@
 package org.trabalho.config;
 
-import java.io.DataInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.logging.Level;
@@ -28,6 +26,7 @@ public class Servidor implements Runnable{
             DataInputStream dis = new DataInputStream(is);
             String nome = dis.readUTF();
             System.out.println("Conexao aceita de "+nome);
+
         } catch (IOException ex) {
             Logger.getLogger(Servidor.class.getName()).log(Level.SEVERE, null, ex);
         }

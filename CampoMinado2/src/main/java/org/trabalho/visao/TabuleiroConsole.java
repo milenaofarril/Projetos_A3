@@ -16,7 +16,7 @@ public class TabuleiroConsole {
 	private Tabuleiro tabuleiro;
 	private InterfaceEntradaESaida entradaESaida;
 	private DataBase base;
-	private Nivel nivel = new Nivel();
+	private Nivel nivel = null;
 	
 	public TabuleiroConsole(Tabuleiro tabuleiro) {
 		this.tabuleiro = tabuleiro;

@@ -2,10 +2,7 @@ package org.trabalho.config;
 
 import org.trabalho.controller.InitGame;
 
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.net.Socket;
 import java.util.Date;
 import java.util.logging.Level;
@@ -52,23 +49,19 @@ public class ServidorClient {
             }
         }
         if (conectado) {
+            try {
+                ObjectInputStream objectInputStream = new ObjectInputStream(cliente.getInputStream());
+                objectInputStream.readObject();
+                objectInputStream.close();
+                cliente.close();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
             System.out.println(nomeCliente + " Conseguiu conectar");
-//            try {
-//                ObjectOutputStream saida = new ObjectOutputStream(cliente.getOutputStream());
-//                saida.flush();
-//                saida.writeObject(new Date());
-//                saida.close();
-//                cliente.close();
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
         } else {
             System.out.println("Foi mal, esperei o que deu...");
         }
     }
-
-    public void game(){
-        new InitGame().init();
-    }
-
 }

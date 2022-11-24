@@ -12,11 +12,10 @@ public class InitGame {
     private InterfaceEntradaESaida entradaESaida;
     private DataBase dataBase;
 
-    public void init() {
+    public Object init() {
         entradaESaida = new InterfaceEntradaESaida();
-        name();
-        Nivel nivel = entradaESaida.leNivel();
 
+        Nivel nivel = entradaESaida.leNivel();
 
             switch (nivel.getNivel()) {
                 case "1":
@@ -35,6 +34,7 @@ public class InitGame {
                     System.out.println("Nivel invalido");
             }
 
+        return null;
     }
 
     public void name(){
