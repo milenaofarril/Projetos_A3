@@ -1,13 +1,15 @@
-<h1 align="center"> Projetos A3 </h1>
+### Trabalho de Web
+#### Esse trabalho de fins para mostrar o que foi aprendido nas aulas com Java, Sockets e servidores
 
-Projetos do 3º semestre do curso de Ciência da Computação, das matérias de "Usabilidade, Desenvolvimento Web, Mobile e Jogos" e "Sistemas Distribuídos e Mobile".
 
-Integrantes:
+### Como Testar
 
-Braiam Santos de Jesus - RA: 125111368287 <br>
-Davi dos Santos Silva - RA: 125111361097 <br>
-Diogo de Jesus Menezes Silva - RA: 125111368637 <br>
-Milena O. de A. R. Corrêa - RA: 125111350681 <br>
-Paulo Henrique Bitencourth Sousa - RA: 125111348223 <br>
-Talita Rienzi Prado Jarnicki - RA: 125111372943
-
+ 1. Passo um
+    - Precisamos fazer a criação do banco de dados, o script está na pasta Config -> Migration
+ 2. Passo dois
+    Configuração da conexão do banco de dados
+    - É preciso trocar a user e password se for necessário, o default deles estão como root e admin
+ 3. Passo três
+    Agora para rodar todo o projeto
+    - Rodar InitServidor 
+    - Rodar InitClient     
