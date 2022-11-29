@@ -22,7 +22,9 @@
         - Lista de usuario com ID 
         - Deletar usuarios
         - Cadastrar figurinhas
-        - Buscas todas as figurinhas com usuarios
+        - Buscas todas as figurinhas com usuários
+        - Atualização de usuários
+        - Atualização de figurinhas
  5. Utilização do Json
     - Pode ser usuado em qualquer app de JSON
         - O utlizado foi o Postman...       
