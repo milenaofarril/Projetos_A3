@@ -19,10 +19,12 @@
  4. Foi realizado a criação de um Json com todos as rotas que podem ser testadas
     - Para alguns testes são realizado apenas com Tokens gerados no rota de login, são eles
         - Listas de usuarios
-        - Lista de usuario com ID 
-        - Deletar usuarios
+        - Lista de usuário com ID 
+        - Deletar usuários
         - Cadastrar figurinhas
-        - Buscas todas as figurinhas com usuarios
+        - Buscas todas as figurinhas com usuários
+        - Atualização de usuários
+        - Atualização de figurinhas
  5. Utilização do Json
     - Pode ser usuado em qualquer app de JSON
         - O utlizado foi o Postman...       
