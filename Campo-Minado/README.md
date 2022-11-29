@@ -1,4 +1,4 @@
-### Trabalho de Web
+### Trabalho de Sistemas
 #### Esse trabalho de fins para mostrar o que foi aprendido nas aulas com Java, Sockets e servidores
 
 
