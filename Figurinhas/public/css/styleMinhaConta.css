@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,600;1,600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #ec4c4c;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+
+.cabecalho {
+    background-color: #3a3a3a;
+    height: 80px;
+    color: #fff;
+    padding: 15px 30px;
+    border-bottom: solid 5px #ec4c4c;
+    box-sizing: content-box;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 1.1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo {
+    display: inline-block;
+    height: 80px;
+    padding: 15px;
+}
+
+.logo img {
+    height: 100%;
+
+}
+
+.menu-pessoa {
+    float: right;
+    color: #eee;
+    background: #ec4c4c;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 20px 15px;
+}
+
+.menu-pessoa:hover {
+    background-color: #ec4c4ca1;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    height: 80px;
+    padding: 25px;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    padding: 15px;
+}
+
+.menu a:hover {
+    background-color: #ec4c4c;
+}
+
+.menu-sair {
+    float: right;
+    height: 85px;
+    padding: 25px;
+}
+
+.menu-sair img {
+    height: 100%;
+}
+
+main .titulo {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+#editar-conta {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+
+}
+
+.card {
+
+    background-color: rgba(19, 19, 19, 0.3);
+    padding: 80px;
+    border-radius: 6px;
+    width: 500px;
+
+}
+
+.card-header {
+
+    padding-bottom: 50px;
+    opacity: 0.8;
+    color: rgb(12, 11, 11);
+
+
+}
+
+.card-header h2 {
+
+    text-align: center;
+}
+
+.card-content label {
+
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.8;
+    font-size: 25px;
+
+}
+
+.card-content-area {
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 10px;
+    padding: 0 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+div.card-footer #submit {
+
+    border: 0;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: #ec4c4c;
+
+}
+
+div.card-footer #submit:hover {
+    background-color: #00802b;
+    transition-duration: 0.9s;
+}
+
+.card-footer a {
+
+    text-align: center;
+    font-size: 12px;
+    opacity: 0.8;
+    color: #fff;
+    margin: 10px;
+
+}
+
+.card-footer input:hover {
+    background-color: rgba(0, 0, 0, 0.288);
+
+}
+
+.button-1 {
+    background-color: #ec4c4c;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+    background-color: rgba(0, 0, 0, 0.288);
+}
