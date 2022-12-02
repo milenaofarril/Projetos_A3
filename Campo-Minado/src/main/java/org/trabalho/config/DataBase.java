@@ -29,7 +29,7 @@ public class DataBase {
 
             PreparedStatement stmt = connect.prepareStatement(sql);
             stmt.setString(1, nome);
-            stmt.setInt(2, 10);
+            stmt.setInt(2, 0);
             stmt.execute();
             stmt.close();
         } catch (SQLException ex) {
