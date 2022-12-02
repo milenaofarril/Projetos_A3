@@ -86,6 +86,7 @@ public class TabuleiroConsole {
 			base.buscarJogador(nome);
 
 		} catch(ExplosaoException e) {
+			base.buscarJogador(nome);
 			System.out.println(tabuleiro);
 			System.out.println("Você perdeu!");
 		}
